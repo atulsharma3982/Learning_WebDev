@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specifity</title>
+    <style>
+        /* Checkout code with harry .c  */
+        
+        /* The specificity of this is 1 */
+        h1{
+            color: aqua;
+        }
+        /* The specificity of this is 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* The specificity of this is 1 + 10 */
+        h1.cyellow{
+            color: yellow;
+        }
+        /* The specificity of this is 10 */
+        .cred{
+            color: red;
+        }
+        /* This is an example of attribute selector  The specificity of this is 10 */
+        [data-x="a"]{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="cyellow cred cpurple" data-x="a">CSS Specifity</h1>
+</body>
+</html>
