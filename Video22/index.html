@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1536px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1536px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            /* font-size: 18px; */
+            background-color: aquamarine;
+        }
+        .container > div{
+            border: 2px solid red;
+            font-size: 2rem;
+            width: 50%;
+        }
+        .container > div > div{
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycont{
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 100vmin;
+            /* width: 100vh; */
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box!
+    </div>
+    <div class="container">
+        I am a container!
+        <div>
+            <!-- lorem999 -->
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt delectus, nostrum fugiat alias vitae fugit voluptas, repellendus molestiae vero quam commodi quia aspernatur libero minus rem expedita sint quas non corrupti voluptatibus ab laborum reprehenderit! Incidunt rem nostrum consequatur alias totam ab molestiae ratione aperiam quis, consequuntur dolore delectus et at aspernatur ipsam repellendus in. Commodi.
+            <div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis eius cumque, ratione ipsam dolor amet quibusdam consectetur ad esse. Maiores dignissimos magni dolores!
+            </div>
+        </div>
+    </div>
+    <div class="mycont">
+        I am another container!
+    </div>
+</body>
+</html>
