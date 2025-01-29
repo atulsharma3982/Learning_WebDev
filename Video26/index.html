@@ -4,8 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overview</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 30vw;
+            height: 30vh;
+            /* overflow: auto;
+            overflow-y: scroll;
+            overflow-x: hidden; */
+            overflow: hidden auto;
+            /* white-space: nowrap; */
+            /* overflow: hidden; */
+            /* overflow: clip;//can't scroll even programatically */
+            /* text-overflow: ellipsis; */
+        }
+    </style>
 </head>
 <body>
-    <p>This is a para! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut repudiandae vitae totam possimus aliquid, eveniet temporibus deleniti non libero mollitia quo, distinctio voluptate.</p>
+    <div class="box">This is a div! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut repudiandae vitae totam possimus aliquid, eveniet temporibus deleniti non libero mollitia quo, distinctio voluptate. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo illum nihil, nobis ipsum labore atque fugit? Obcaecati nam eius debitis, fuga ut in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum beatae labore at consequuntur provident optio voluptas est, sed temporibus atque tempore, explicabo necessitatibus velit quos porro laudantium aspernatur asperiores libero quasi. Vitae, pariatur quaerat delectus quidem quibusdam ipsam unde odit dolores voluptatibus ut eveniet. Quis ab suscipit modi ipsam libero expedita.</div>
 </body>
 </html>
