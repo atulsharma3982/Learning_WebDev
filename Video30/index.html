@@ -5,10 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables</title>
     <style>
-        
+        :root{
+            --color: rgb(217, 95, 183);
+            --seccolor: rgb(248, 154, 170);
+            --defpad: 23px;
+            --defop: 0.7;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .nav{
+            /* background-color: rgb(64, 227, 64); */
+            background-color: var(--color);
+        }
+        .container{
+            /* background-color: rgb(152, 232, 152); */
+            background-color: var(--seccolor);
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            padding: var(--defpad);
+            list-style: none;
+            border: 2px solid var(--seccolor);
+        }
+        ul li:first-child{
+            --color: rgb(255, 68, 0);
+            background-color: var(--color,blue);
+        }
     </style>
 </head>
 <body>
-    
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium laudantium rerum repellat sapiente perferendis consequatur laborum, debitis quasi cumque aliquam vitae recusandae velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam neque ducimus ea.
+    </div>
 </body>
 </html>
