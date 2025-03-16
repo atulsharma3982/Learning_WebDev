@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+/* :root{
+    /* --home: rgb(250, 55, 233);
+    --contact: rgb(41, 250, 41);
+    --services: rgb(246, 255, 0);
+    --about: rgb(0, 247, 255); */
+    /* --primary-color: rgb(64 149 219);
+    --secondary-color: rgb(218, 230, 239);
+    --button-color: white;
+    --hover: rgb(222, 219, 219); */
+/* }  */
+:root{
+    --primary-color: rgb(4, 116, 66);
+    --secondary-color: rgb(122, 241, 209);
+    --button-color: white;
+    --hover: rgb(222, 219, 219);
+}
+body{
+    background-color: var(--secondary-color);
+}
+.nav{ 
+    background-color: var(--primary-color);
+    padding-left: 14px;
+    /* font-family: "Poppins", sans-serif; */
+    /* margin-right: 580px; */
+}
+ul li{
+    /* display: flex; */
+    display: inline;
+    /* font-family: "Poppins", sans-serif; */
+    /* background-color: yellow; */
+    /* padding: 0px 0px 0px 0px; */
+    /* margin: 0px 580px 0px 0px; */
+}
+ul li{
+    list-style: none;
+    padding: 10px;
+    /* color: white; */
+    /* margin: 10px; */
+}
+button a{
+    color: var(--button-color);
+    font-weight: bolder;
+    text-decoration: none;
+}
+/* ul .home{ */
+/* padding-left: 10px; */
+/* margin-right: 10px; */
+/* }  */
+/* .home{
+    padding: 5px 5px 5px 5px; */
+    /* width: 10px; */
+    /* margin-right: 10px;
+    } */
+.home button{
+    /* font-family: "Poppins", sans-serif; */
+    background-color: var(--home);
+    padding: 5px;
+    border: none;
+}
+.home button:hover{
+    --home: rgb(251, 251, 105);
+    cursor: pointer;
+    background-color: var(--hover);
+}
+.home button:active{
+    background-color: grey;
+}
+.Services button{
+    /* font-family: "Poppins", sans-serif; */
+    background-color: var(--services);
+    padding: 5px;
+    border: none;
+}
+.Services button:hover{
+    --services: rgb(251, 251, 105);
+    cursor: pointer;
+    background-color: var(--hover);
+}
+.Services button:active{
+    background-color: grey;
+}
+.Contact button{
+    /* font-family: "Poppins", sans-serif; */
+    background-color: var(--contact);
+    padding: 5px;
+    border: none;
+}
+.Contact button:hover{
+    --home: rgb(251, 251, 105);
+    cursor: pointer;
+    background-color: var(--hover);
+}
+.Contact button:active{
+    background-color: grey;
+}
+.About button{
+    /* font-family: "Poppins", sans-serif; */
+    background-color: var(--about);
+    padding: 5px;
+    border: none;
+}
+.About button:hover{
+    --home: rgb(251, 251, 105);
+    cursor: pointer;
+    background-color: var(--hover);
+}
+.About button:active{
+    background-color: grey;
+}
