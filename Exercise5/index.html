@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Given Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: red;
+            position: sticky;
+            top: 0px;
+            height: 25px;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            /* position: sticky;
+            top: 0px;
+            height: 111px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+        }
+        ul li{
+            display: inline;
+            list-style: none;
+            padding: 20px;
+            /* margin-top: 15px; */
+            color: antiquewhite;
+            font-weight: bolder;
+        }
+        main>div:first-child{
+            background-color: rgb(130, 56, 56);
+            margin: 10px;
+            /* height: 100%; */
+            height: 100vh;
+        }
+        /* div:first-child{
+            padding: 20px;
+            border: 2px solid green;
+        } */
+        .left{
+            float: left;
+            background-color: rgb(19, 201, 186);
+            width: 650px;
+            height: 80vh;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+        .right{
+            background-color: rgb(9, 83, 77);
+            float: right;
+            width: 650px;
+            height: 80vh;
+            margin-top: 50px;
+            margin-right: 50px;
+        }
+        .greetings{
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 20px 5px;
+            text-align: center;
+            margin: 10px 50px;
+            /* position: absolute; */
+            /* bottom: 10px; */
+        }
+        img{
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            /* float: right; */
+            /* clear: left; */
+            /* margin-top: 600px; */
+            border: 2px solid red;
+            border-radius: 20px;
+            /* padding: 5px 10px; */
+        }
+        footer{
+            background-color: rgba(217, 207, 18, 0.479);
+            color: gray;
+            height: 50px;
+            text-align: center;
+            padding: 50px 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- <li>Home</li>
+                <li>About</li>
+                <li>FAQs</li>
+                <li>Contact Us</li> -->
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- <section> -->
+            <div class="sec">
+                <section class="left">
+                    
+                </section>
+                <section class="right">
+                    
+                </section>
+            </div>
+        <!-- </section>
+        <section> -->
+            <div class="greetings">
+                Welcome to the Sigma Web Development Express
+            </div>
+        <!-- </section> -->
+        <div class="icon">
+            <img src="https://imgs.search.brave.com/JpKUrlU0LHTkOLeyF-dmhrm-IZfywwH6TfvljFyuej0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzA0LzA2Lzg4/LzM2MF9GXzMwNDA2/ODg0MF9ET2Ztc3Zq/WlFHNzJpcWl6aXo3/UjhjVVpOYXBZM245/Ni5qcGc" alt="" width="30px">
+        </div>
+    </main>
+    <footer>
+        Made by Atul!! <br>
+        © 2025 CodeWithAtul || All rights reserved
+    </footer>
+</body>
+</html>
