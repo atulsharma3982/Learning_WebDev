@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #f9ffff;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 97.200px;
+            /* border: 1px solid rgba(42, 42, 42, 0.134); */
+        }
+
+        .logo {
+            position: relative;
+        }
+
+        .logo img:first-child {
+            position: relative;
+            z-index: 1;
+            width: 181px;
+        }
+
+        .logo img:nth-child(2) {
+            position: absolute;
+            top: 42px;
+            left: 91px;
+            z-index: 2;
+            width: 90px;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 35px;
+        }
+
+        .right ul li {
+            list-style: none;
+            font-family: "Segoe UI";
+            display: flex;
+            align-items: center;
+        }
+        .right ul li svg{
+            width: 18px;
+        }
+        main {
+            width: 950px;
+            margin: auto;
+            margin-top: 3em;
+            display: grid;
+            /* grid-template-areas:"english german italian"
+                                "spanish french brazialian "
+                                "japanese korean chinese"
+                                "tr-chinese . .."; */
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+            font-family: 'Segoe UI';
+            /* justify-content: center; */
+            /* align-items: center; */
+
+        }
+
+        main>div {
+            margin: 0;
+            height: 201.8px;
+            width: 100%;
+            background-color: rgb(243, 242, 242);
+            text-align: center;
+            /* place-content: center; */
+            /* padding-top: 1px; */
+        }
+
+        main div h2 {
+            /* border: 2px solid black; */
+            margin: 0;
+            margin-top: 12px;
+        }
+
+        main div p {
+            margin: 0;
+            margin-top: 11px;
+            font-size: 12px;
+            /* cursor: text; */
+        }
+
+        main div button {
+            margin-top: 20px;
+            background-color: #5cb85c;
+            color: white;
+            border-radius: 5px;
+            padding: 9px 20px;
+            border: #5cb85c;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        main div .hash_name {
+            font-size: 11px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        main div div {
+            word-break: break-word;
+            line-height: 1rem;
+        }
+
+        main div .hash {
+            margin-top: 5px;
+            font-size: 8px;
+            font-weight: lighter;
+            cursor: pointer;
+            /* width: 40px; */
+            /* text-decoration: line-through; */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Background-2.png" alt="">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Layer-1-1.png" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>For Business <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Academic licensing</li>
+                    <li>Our Company<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="lang english">
+            <h2>English</h2>
+            <p>&nbsp;</p>
+            <a href="ue_english_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">F710BF78A1948AA9DD9F7090192DA527097C05B9C483F455A05E9<br>3292D91AE27</p>
+            </div>
+        </div>
+        <div class="lang german">
+            <h2>Deutsch</h2>
+            <p>German</p>
+            <a href="ue_german_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">96281171482C8AB26C2B135C27EA9E426F183096A9CF37DB7B7FDE<br>B9A0F48DEE</p>
+            </div>
+        </div>
+        <div class="lang italian">
+            <h2>Italiano</h2>
+            <p>Italian</p>
+            <a href="ue_italian_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">B5B4C62F14CB578F01BCAA7210E5F05E416C36130CF7E8B3B96C19<br>4C9E7D4B21</p>
+            </div>
+        </div>
+        <div class="lang spanish">
+            <h2>Español</h2>
+            <p>Spanish</p>
+            <a href="ue_spanish_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">8A1477125636ABE0E0D540F52AB7F6C99A5F1E37BBA5AEC8EFABE5<br>3D633231B7</p>
+            </div>
+        </div>
+        <div class="lang french">
+            <h2>français</h2>
+            <p>French</p>
+            <a href="ue_french_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">7666F7481BF485A45ADE396FC2A10808D2285D05B4B713832CCF<br>AD45694F9D2D</p>
+            </div>
+        </div>
+        <div class="lang brazialian">
+            <h2>Português brasileiro</h2>
+            <p>Brazilian Portuguese</p>
+            <a href="ue_portuguese_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">029517243F00068F73193A81F3212C3256997AD51DA0B1414F8F12<br>BF9BDB53DC</p>
+            </div>
+        </div>
+        <div class="lang japanese">
+            <h2>日本</h2>
+            <p>Japanese</p>
+            <a href="ue_japanese_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">7041BB36B2068250962A1F27D74ECA93CEB67828B6963800AA1BB4<br>A8B33448AF</p>
+            </div>
+        </div>
+        <div class="lang korean">
+            <h2>한국어</h2>
+            <p>Korean</p>
+            <a href="ue_korean_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">5A719E02C8923ECA2AA889056C5B5899FE6E6CBD79B1851624244<br>DF0E7DFE17C</p>
+            </div>
+        </div>
+        <div class="lang chinese">
+            <h2>华语</h2>
+            <p>Chinese</p>
+            <a href="ue_chinese_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">220DCFE5B4FC303933674DB210E744AF8BEAE05275437D8CF3D89E<br>1A6CCB6E6C</p>
+            </div>
+        </div>
+        <div class="lang tr-chinese">
+            <h2>華語</h2>
+            <p>Traditional Chinese</p>
+            <a href="ue_chinese_traditional_64.exe"><button>Download 64-bit</button></a>
+            <p class="hash_name">SHA256</p>
+            <div>
+                <p class="hash">529939C05D041CDCAB72925500988C4C23E7C8EF0E7311E4CD25C<br>534F81AEB0F</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
