@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and position</title>
+    <style>
+        .container{
+            width: 466px;
+            height: 488px;
+            border: 2px solid black;
+            /* background-color: azure; */
+            background-image: url("https://imgs.search.brave.com/sfE17UW78rj21M7IpOm6XMKipV1hqT3lhn8uWFQd91I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA3/MTEwNDczNC9waG90/by93b21hbi1zaWxo/b3VldHRlLWF0LXN1/bnNldC1vbi1oaWxs/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz0zUHJDSGNsdFM0/VHR4VVhIeFQ5ckxY/ckcxNTRMcGY3MEJO/RFFma3lzUm5RPQ");
+            background-position: center center;
+            /* background-position: top left; */
+            /* background-position: 0% 100%; */
+            background-repeat: no-repeat;
+            /* background-repeat: repeat-x; */
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            /* object-fit: cover; */
+            object-fit: contain;
+            /* object-fit: fill; */
+            /* object-position: top left; */
+            object-position: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="https://imgs.search.brave.com/sfE17UW78rj21M7IpOm6XMKipV1hqT3lhn8uWFQd91I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA3/MTEwNDczNC9waG90/by93b21hbi1zaWxo/b3VldHRlLWF0LXN1/bnNldC1vbi1oaWxs/LmpwZz9zPTYxMng2/MTImdz0wJms9MjAm/Yz0zUHJDSGNsdFM0/VHR4VVhIeFQ5ckxY/ckcxNTRMcGY3MEJO/RFFma3lzUm5RPQ" alt=""> -->
+    </div>
+</body>
+</html>
