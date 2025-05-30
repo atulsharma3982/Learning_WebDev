@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Bounce Animation</title>
+    <style>
+        .container{
+            background-color: rgb(255, 0, 0);
+            height: 80vh;
+            width: 80vw;
+            position: relative;
+        }
+        .box{
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            /* height: 10%;
+            width: 10%; */
+            border-radius: 75px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: x 4s linear 0s infinite forwards, y 0.5s cubic-bezier(0.39, 0.58, 0.57, 1) 0s infinite alternate;
+            /* animation: x 4s linear 0s infinite forwards; */
+            /* animation: y 0.5s ease-in-out 0s infinite alternate; */
+        }
+        @keyframes x {
+            0%{
+                left: 0;
+            }
+            25%{
+                /* right: 0; */
+                /* transform: translateX(63.2vw); */
+                left: 17vw;
+            }
+            50%{
+                left: 35vw;
+            }
+            75%{
+                left: 52vw;
+            }
+            100%{
+                left: 65vw;
+                /* right: 80vw; */
+            }
+        }
+        @keyframes y {
+            from{
+                bottom: -1px;
+            }
+            to{
+                bottom: 40vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+</body>
+</html>
