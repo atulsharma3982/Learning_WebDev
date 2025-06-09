@@ -22,9 +22,8 @@ The goal is to build up your skills step‑by‑step, from basic HTML/CSS to Jav
 
 Future lessons may cover:
 
-* Frontend frameworks (React, Vue)
-* Module bundlers (Webpack, Vite)
-* Package managers (npm, Yarn)
+* Frontend frameworks (React)
+* Package managers (npm)
 * Version Control (Git)
 
 ---
