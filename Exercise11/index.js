@@ -18,3 +18,4 @@ for (let i = n; i > 0; i--) {
     a *= i;
 }
 console.log(a);
+document.body.textContent=a;
