@@ -1,0 +1,110 @@
+<!-- The Local Storage Manager: You are working on a note-taking app, and you want to implement a function named saveNoteToLocalStorage that takes a note object and saves it to the browser's local storage. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(21, 21, 21);
+        }
+
+        .button {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 25px;
+        }
+
+        .button button {
+            padding: 5px 10px;
+            border: 1px solid transparent;
+            color: white;
+            font-weight: 600;
+            background-color: rgb(77, 72, 72);
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .note {
+            color: white;
+            margin: 25px auto;
+            width: 80vw;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.8px;
+            /* line-gap-override: 2px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="button">
+        <button>Add Heading</button>
+        <button>Add Subheading</button>
+        <button>Add Note</button>
+        <button>Clear All</button>
+        <button>Show Notes</button>
+    </div>
+    <div class="note"></div>
+    <script>
+        function type(type, Note) {
+            function saveNoteToLocalStorage(note) {
+                localStorage.setItem(`${type}`, note);
+            }
+            saveNoteToLocalStorage(Note);
+            let note = localStorage.getItem(`${type}`)
+            if (note) {
+                let p = document.createElement(`${type}`);
+                p.id = `${type}`;
+                p.innerHTML = note;
+                document.querySelector(".note").appendChild(p);
+            }
+        }
+        function show(type){
+            let note = localStorage.getItem(`${type}`)
+            if (note) {
+                let p = document.createElement(`${type}`);
+                p.id = `${type}`;
+                p.innerHTML = note;
+                document.querySelector(".note").appendChild(p);
+            }
+
+        }
+        document.getElementsByClassName("button")[0].children[0].addEventListener("click", () => {
+            let note = prompt("Enter your note")
+            type("h1", note)
+        })
+        document.getElementsByClassName("button")[0].children[1].addEventListener("click", () => {
+            let note = prompt("Enter your note")
+            type("h3", note)
+        })
+        document.getElementsByClassName("button")[0].children[2].addEventListener("click", () => {
+            let note = prompt("Enter your note")
+            type("p", note)
+        })
+        document.getElementsByClassName("button")[0].children[3].addEventListener("click", () => {
+            // let note = prompt("Enter your note")
+            // saveNoteToLocalStorage(note)
+            // if (note) {
+            //     let p = document.createElement("p");
+            //     p.innerHTML = note;
+            //     document.querySelector(".note").appendChild(p);
+            // }
+            localStorage.clear();
+            document.getElementById("h1").remove();
+            document.getElementById("h3").remove();
+            document.getElementById("p").remove();
+        })
+        document.getElementsByClassName("button")[0].children[4].addEventListener("click", () => {
+            show("h1");
+            show("h3");
+            show("p");
+        })
+
+    </script>
+</body>
+
+</html>
