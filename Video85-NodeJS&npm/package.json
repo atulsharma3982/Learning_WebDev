@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "express": "^5.2.1",
+    "slugify": "^1.6.6"
+  },
+  "name": "test",
+  "version": "1.0.0",
+  "description": "This is a testing folder for npm",
+  "main": "myserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Atul Sharma",
+  "license": "ISC"
+}
