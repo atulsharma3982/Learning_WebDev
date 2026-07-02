@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    height: 34px;
+    padding: 10px 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 34px;
+}
+
+a li{
+    list-style: none;
+    color: white;
+}
+
+.red{
+    background-color: red;
+}
+
+/* a:active{
+    background: red;
+} */
